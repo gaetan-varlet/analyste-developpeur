@@ -10,8 +10,7 @@
 - il faut veiller à parler des points clés, bien structurer ses réponses et être précis dans ses réponses
 
 
-
-## Notions importantes
+## Notions importantes
 
 - proxy :
 	- machine faisant fonction d'intermédiaire entre un réseau local et internet, il permet de faire des requêtes sur Internet à la place des ordinateurs du réseau local (cache, filtrage, ...)
@@ -25,7 +24,7 @@
 	- base de données relationnelle : type de BDD le plus répandu aujourd'hui, basé sur l'algèbre relationnel, organisé en tables
 	- base de données NoSQL (not only SQL)  : variété de formats, tels que les clés/valeurs (Redis), les documents (MongoDB), des graphes (Neo4J)..., offre une grande flexibilité et évolutivité
 - les 3 référentiels généraux :
-	- RGAA (référentiel général d'amélioration de l'accessibilité) : présente les obligations d'une part, et les critères d'autre part pour vérifier la conformité ( critères de niveaux A, AA et AAA, doit valider les 106 critères A et AA)
+	- RGAA (référentiel général d'amélioration de l'accessibilité) : présente les obligations d'une part, et les critères d'autre part pour vérifier la conformité ( critères de niveaux A, AA et AAA, doit valider les 106 critères A et AA). Exemple : alternative sur les images, rapport de contraste
 	- RGS (référentiel général de sécurité) : cadre règlementaire permettant d'instaurer la confiance dans les échanges au sein de l'administration et avec les citoyens
 	- RGI (référentiel général d'interopérabilité) : normes et standards qui favorisent l'interopérabilité au sein des systèmes d'information de l'administration
 - ANSSI (agence nationale de la sécurité des systèmes d'information) : service du premier ministre, apporte son expertise aux administration et entreprises sur les les opérations d'importance vitale (OIV)
@@ -36,19 +35,62 @@
 	- une « donnée personnelle » est « toute information se rapportant à une personne physique identifiée ou identifiable »
 	- avant le RGPD, système déclaratif à la CNIL (loi de 1978 dite loi informatique et libertés, réglemente la liberté de traitement des données personnelles, c'est-à-dire la liberté de ficher les personnes humaines. Création de l'autorité de contrôle (CNIL))
 	- RPGD introduit un **registre des traitements** interne aux administrations/entreprises, ouvert à la CNIL et un **delegué à la protection des données**
+- loi pour une République numérique de 2016, en vigueur en 2018, qui prône par défaut l'ouverture des données publiques, notamment les codes sources des applications
+- certificat électronique :
+	- permet de garantir l'identité du signataire et l'intégrité du document
+	- le certificat le plus connu est SSL
+	- ils sont délivrés par une autorité de certification, qui sont des tiers de confiance
+- Les projets
+	- acteurs : AMOA, utilisateurs, RIAP, MOA, CPS, CPI, équipe de dev
+	- Comité des Investissements émet un avis au début du projet. Le CDPTT définit les moyens des projets en suivant ou non le CI
+	- CDPTT : projection triennale des travaux, 2 par ans (octobre et avril), les directions émettent des besoins (les moyens métiers et info), le CDPTT arbitre, avec une phase d'échange en amont
+	- dialogue avec le métier, notamment pour les spécifications : utilisation des diagrammes UML
+	- étapes d'un projet
+		- définition des objectifs du projet (via NCS)
+		- phase exploratoire (via la NCO : étude de l'existant, recherche de solutions existantes, définition du périmètre, étude de faisabilité et des risques)
+		- réalisation (spécifications, développements, recette)
+		- atterissage : mise en production, suivi, tenir la documentation à jour, préparer le passage en maintenance
+	- MAJ de la gestion des projets à l'Insee :
+		- DIP (déclaration d'intention de projet) EB (expression des besoins) et EP (étude préalable)
+		- remplacé par NCS (note de cadrage stratégique) et NCO (note de cadrage opérationnelle) - NCS -> objectifs stratégiques, insertion dans le système existant, complexité, coût et ressources, contraintes et délais, analyse des risques - NCO -> équivalent à peu près à l'EB (description de l'archi, POC) - 2 passages devant le CI avec avis après rendu de chacun des documents
+	- démarche Maïol : accompagnement au changement, plutôt organisationnel
+		- plutôt quand ça concerne les utilisateurs en DR
+		- 3 phases : analyse de l'existant, proposition du processus cible, formation
+- Les méthodes d'organisation de projet
+	- Cycle en V : modèle d'organisation des activités d'un projet qui se caractérise par un flux d'activité descendant qui détaille le produit jusqu'à sa réalisation, et un flux ascendant, qui assemble le produit en vérifiant sa qualité
+	- Modèle en cascade : organisation des activités d'un projet sous forme de phases linéaires et séquentielles, où chaque phase correspond à une spécialisation des tâches et dépend des résultats de la phase précédente
+		- exigences -> analyse -> conception -> mise en oeuvre -> validation -> mise en service
+	- MDA : Model driven architecture
+	- l'agilité :
+		- méthode mettant en avant la collaboration entre des équipes auto-organisées et pluridisciplinaires et leurs clients, cadre méthodo léger, centré sur l'humain et la communication
+		- pour répondre au taux important d'échecs des projets de développements logiciels du à la lourdeur des méthodes traditionnelles
+		- planification adaptative, développement évolutif, livraison précoce et amélioration continue, réponses flexibles au changement
+		- popularisé en 2001 avec le Manifeste pour le développement agile de logiciels (4 valeurs et 12 principes)
+		- Scrum (mélée) avec Kanboard (tableau)
+			- équipe multidisciplinaire
+				- Product Owner : responsable du backlog et oriente l'équipe. Elabore les besoins et porte la vision client du produit final
+				- Scrum Master : oraganiser les cérémonies Agile, anime et facilite le travail de l'équipe de développement
+				- Equipe de dev : mise en oeuvre des solutions techniques
+			- sprint : itération de une à quatres semaines
+			- estimation des tâches
+			- daily-meeting
+			- sprint planning : définition des tâches de l'itération => Sprint Backlog
+			- la revue : examen de ce qui a été développé pour récolter des retours qui seront qualifiés en tâches pour les prochaines itérations
+			- la rétrospective : recensement des problèmes pour améliorer son organisation
+		- Kanban (panneau) : découpage comme Scrum du travail en petites tâches
+			- comme Scrum, tableau pour visualiser les tâches dans le flux de travail
+			- pas de Sprint, mais un flux continue avec l'arrivée des tâches les plus importantes du backlog sur le tableau
+			- limiter le travail en cours avec un nombre maximum de tâches par colonne, ne pas commencer des nouvelles tâches sans avoir terminé les tâches en cours
+			- pas de notion d'engagement comme c'est le cas dans Scrum avec un engagement sur la quantité de travail dans l'itération à venir
+- sécurité du SI : ensemble des mesures techniques et non techniques de protection permettant à un SI de résister à des événements susceptible de compromettre la disponibilité, l'intégrité ou la confidentialité des données et services
 
-## à réviser
+
+## A réviser
 
 - le rôle de l'analyste
 - les différents concours du ministère (les différents PSE, Chef de projet...)
-- les étapes du projet informatique
-- les différents intervenants
 - la documentation amont d'un projet informatique
-- cycle en V vs agilité (Scrum et Kanban) (et NCS et NCO)
-- les différents types de base de données
-- les notions de PCA-PRA (plan de continuité / reprise d'activité)
-- accessibilité / RGAA (citer au moins une règle)
+- les notions de PCA-PRA (plan de continuité d'activité / plan de reprise d'activité)
 - loi pour une république numérique
-- CNIL et RGPD
 - les marchés publics
 - sécurité informatique : types d'attaques, référentiels, bonnes pratiques/tests/audits
