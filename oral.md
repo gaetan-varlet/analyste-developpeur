@@ -29,8 +29,6 @@
 	- RGAA (référentiel général d'amélioration de l'accessibilité) : présente les obligations d'une part, et les critères d'autre part pour vérifier la conformité ( critères de niveaux A, AA et AAA, doit valider les 106 critères A et AA). Exemple : alternative sur les images, rapport de contraste
 	- RGS (référentiel général de sécurité) : cadre règlementaire permettant d'instaurer la confiance dans les échanges au sein de l'administration et avec les citoyens
 	- RGI (référentiel général d'interopérabilité) : normes et standards qui favorisent l'interopérabilité au sein des systèmes d'information de l'administration
-- ANSSI (agence nationale de la sécurité des systèmes d'information) : service du premier ministre, apporte son expertise aux administration et entreprises sur les les opérations d'importance vitale (OIV)
-- critères DICP : Disponibilité (accès permanent), Intégrité (données non altérées), Confidentialité (droits/permissions), Preuve (traçabilité)
 - MAREVA (méthode d'analyse et de remontée de la valeur) : rentabilité du projet, nécessité de réaliser le projet, risques associées au projet, bénéfices attendus
 - RGPD : Règlement général sur la protection des donnée, règlement de l'UE entré en vigueur en 2016
 	- encadre le traitement des données personnelles sur le territoire de l’Union européenne
@@ -107,17 +105,30 @@
 - schéma directeur : définit l'horizon, la marche à suivre du SI
 - prime TAI : prime Taitement Automatisé de l'Information
 - documentation :
-	- spécifications générales
-	- spécifications détaillées
-	- guide utilisateur
-	- dossier d'exploitation (DEX) / contrat d'application
-	- note d'architecture
-	- EP / Etude détaillée
-	- Plan d'assurance qualité
-	- code source
+	- intérêts : passer le relai à une autre équipe, accompagner l'utilisateur, piloter, informer, tracer les décisions, contractualiser...
+	- liste des documents :
+		- spécifications générales
+		- spécifications détaillées
+		- guide utilisateur
+		- dossier d'exploitation (DEX) / contrat d'application
+		- note d'architecture
+		- EP / Etude détaillée
+		- Plan d'assurance qualité : présente les dispositions prises par la MOA et MOE pour organiser et planifier le projet et assurer la qualité
+		- code source
 - maintenances : adaptative / corrective / évolutive
 - assistance utilisateur : fonctionne en niveau : niveau 1 va répondre, sinon transmet au niveau 2... utilisation d'un logiciel comme Siamoi à l'Insee
+- TMA : tierce maintenance applicative : marché public
+- marché public :
+	- liberté d'accès, égalité des traitements, transparence des procédures, CCTP
+	- notion de seuils pour publicité obligatoire, et pour la procédure
+		- marché à procédure adaptée (pas de délais)
+		- appel d'offre
+	- accords cadre
+- virtualisation : partage de ressources physiques
 - sécurité du SI : ensemble des mesures techniques et non techniques de protection permettant à un SI de résister à des événements susceptible de compromettre la disponibilité, l'intégrité ou la confidentialité des données et services
+- HFDS : haut fonctionnaire de la défense et de la sécurité désigné par le ministre. le HFDS désigne le FSSI (fonctionnaire de sécurité du système d'information)
+- ANSSI (agence nationale de la sécurité des systèmes d'information) : service du premier ministre, apporte son expertise aux administration et entreprises sur les les opérations d'importance vitale (OIV)
+- critères DICP : Disponibilité (accès permanent), Intégrité (données non altérées), Confidentialité (droits/permissions), Preuve (traçabilité)
 
 ## A réviser
 
