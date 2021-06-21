@@ -16,12 +16,14 @@
 	- machine faisant fonction d'intermédiaire entre un réseau local et internet, il permet de faire des requêtes sur Internet à la place des ordinateurs du réseau local (cache, filtrage, ...)
 	- reverse proxy : permet aux utilisateurs d'internet d'accéder à certains serveurs interne (protection contre les attaques directes de l'extérieur, répartiteur de charge...)
 - une DMZ (zone démilitarisée) est un sous-réseau séparé du réseau local et isolé de celui-ci et d'Internet (ou d'un autre réseau) par un pare-feu
+- langages compilés / interprétés / machine. langage procédurale / objet / balise
 - les 3 principes de la programmation objet : encapsulation (objet possède propriétés et méthodes) / héritage / polymorphisme
 - les AGL (ateliers de génie logiciel) est un logiciel aidant à la réalisation de logiciels : les environnements de conception (Tramis, éditeur de de diagrammes), les environnements de développement (Eclipse, IntelliJ)
-- les différents types de bases de données : une BDD est une collection de données stockées de manière ordonnée
+- les différents types de bases de données : une BDD est une collection de données stockées de manière ordonnée. propriétés ACID (atomicité, cohérence, isolation, durabilité) garantissent que les transactions sont exécutées entièrement ou pas du tout
 	- base de données hiérarchique : premières BDD, organisé sous forme d'arbre, basé sur la relation parent-enfant (un seul parent par enfant)
 	- base de données réseau : permettent les relations n-n (plusieurs parents / plusieurs enfants)
 	- base de données relationnelle : type de BDD le plus répandu aujourd'hui, basé sur l'algèbre relationnel, organisé en tables
+	- base de données multidimensionnelles : cubes OLAP
 	- base de données NoSQL (not only SQL)  : variété de formats, tels que les clés/valeurs (Redis), les documents (MongoDB), des graphes (Neo4J)..., offre une grande flexibilité et évolutivité
 - les 3 référentiels généraux :
 	- RGAA (référentiel général d'amélioration de l'accessibilité) : présente les obligations d'une part, et les critères d'autre part pour vérifier la conformité ( critères de niveaux A, AA et AAA, doit valider les 106 critères A et AA). Exemple : alternative sur les images, rapport de contraste
@@ -82,8 +84,40 @@
 			- pas de Sprint, mais un flux continue avec l'arrivée des tâches les plus importantes du backlog sur le tableau
 			- limiter le travail en cours avec un nombre maximum de tâches par colonne, ne pas commencer des nouvelles tâches sans avoir terminé les tâches en cours
 			- pas de notion d'engagement comme c'est le cas dans Scrum avec un engagement sur la quantité de travail dans l'itération à venir
+- les différents types de tests
+	- la recette (nouvelles évolutions + non régression)
+	- les tests unitaires / de composants (JUnit)
+	- les tests de BDD (DBUnit)
+	- les tests fonctionnels (Sélénium)
+	- les tests de charge (JMeter)
+- norme vs standard : norme est un référentiel publié par un organisme de normalisation, alors qu'un standard est un ensemble de recommandations préconisées par des utilisateurs avisés
+- LAN vs WAN : Local Area Network (réseau local) vs "Wide" (connecter des réseaux distants)
+- modèle OSI : norme de communication en 7 couches, de la couche physique à la couche applicative
+- sauvegarde à chaud / à froid : base ouverte (transactions en cours) / fermée
+- archivage : durées légales d'archivages, formats pérenne dans le temps
+- système RAID : répartition de données sur plusieurs disques pour assurer une haute disponibilité
+- PRA / PCA :
+	- plan de continuité d'activité : vise à assurer la haute disponibilité, architecture redondante, plutôt pour les applications critiques
+	- plan reprise d'activité : solution moins coûteuse, ensemle des procédures pour redémarrer le SI
+- protocole d'échange de fichiers : EDI ET EFI
+	- EDI : échange de données informatiques qui s'appuie sur des normes
+	- EFI : échange de formulaires informatisés, c'est le mode d'échange du site des impôts qui permet de faire des déclarations et télépayer ses impôts
+- infocentre / SI décisionnel / datawarehouse / datamining => tableau de bord pour les décideurs, peuvent etre compilé via des cubles OLAP, ou des bases Big Data
+- e-administration : utilisation des TIC par les administrations françaises pour rendre les services publics plus accessibles et améliorer le fonctionnement interne
+- schéma directeur : définit l'horizon, la marche à suivre du SI
+- prime TAI : prime Taitement Automatisé de l'Information
+- documentation :
+	- spécifications générales
+	- spécifications détaillées
+	- guide utilisateur
+	- dossier d'exploitation (DEX) / contrat d'application
+	- note d'architecture
+	- EP / Etude détaillée
+	- Plan d'assurance qualité
+	- code source
+- maintenances : adaptative / corrective / évolutive
+- assistance utilisateur : fonctionne en niveau : niveau 1 va répondre, sinon transmet au niveau 2... utilisation d'un logiciel comme Siamoi à l'Insee
 - sécurité du SI : ensemble des mesures techniques et non techniques de protection permettant à un SI de résister à des événements susceptible de compromettre la disponibilité, l'intégrité ou la confidentialité des données et services
-
 
 ## A réviser
 
