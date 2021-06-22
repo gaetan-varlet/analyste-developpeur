@@ -15,6 +15,9 @@
 - proxy :
 	- machine faisant fonction d'intermédiaire entre un réseau local et internet, il permet de faire des requêtes sur Internet à la place des ordinateurs du réseau local (cache, filtrage, ...)
 	- reverse proxy : permet aux utilisateurs d'internet d'accéder à certains serveurs interne (protection contre les attaques directes de l'extérieur, répartiteur de charge...)
+- VPN :
+	- un réseau privé virtuel (VPN) est une connexion sécurisée et chiffrée entre deux réseaux ou entre un utilisateur individuel et un réseau
+	- il permet de créer une connexion sécurisée sur un autre réseau via internet
 - une DMZ (zone démilitarisée) est un sous-réseau séparé du réseau local et isolé de celui-ci et d'Internet (ou d'un autre réseau) par un pare-feu
 - langages compilés / interprétés / machine. langage procédurale / objet / balise
 - les 3 principes de la programmation objet : encapsulation (objet possède propriétés et méthodes) / héritage / polymorphisme
@@ -106,15 +109,21 @@
 - prime TAI : prime Taitement Automatisé de l'Information
 - documentation :
 	- intérêts : passer le relai à une autre équipe, accompagner l'utilisateur, piloter, informer, tracer les décisions, contractualiser...
+	- outils : répertoire partagé, wiki, forge (gestion de versions, droits d'accès) / documents types
 	- liste des documents :
-		- spécifications générales
-		- spécifications détaillées
+		- spéficifications fonctionnelles : description des fonctionnalités offertes par une application
+			- spécifications générales
+			- spécifications détaillées
 		- guide utilisateur
 		- dossier d'exploitation (DEX) / contrat d'application
 		- note d'architecture
 		- EP / Etude détaillée
 		- Plan d'assurance qualité : document de gestion de projet présente les dispositions prises par la MOA et MOE pour organiser et planifier le projet et assurer la qualité
 		- code source
+- comitologie :
+	- comité avant projet : comité de demande nouvelle, comité des marchés publics
+	- au cours du projet : stratégique (comité de pilotage), opérationnel (comité de suivi), comité utilisateur
+	- préparation des comités avec ordre du jour etc...
 - maintenances : adaptative / corrective / évolutive
 - assistance utilisateur : fonctionne en niveau : niveau 1 va répondre, sinon transmet au niveau 2... utilisation d'un logiciel comme Siamoi à l'Insee
 - TMA : tierce maintenance applicative : marché public
@@ -127,6 +136,11 @@
 		- appel d'offre si > 139000€
 	- accords cadre
 - virtualisation : partage de ressources physiques
+- urbanisation du SI : démarche de rationalisation
+	- nombre d'applications et d'échanges entre applis en augmentation
+	- réduction des coûts
+	- partage et mutualisation de l'information
+	- respect des normes et standards (RGI)
 - qualité : fonctionnel, facilité d'utilisation, performance, fiabilité, sécurité, maintenabilité, portabilité
 
 ## La sécurité
