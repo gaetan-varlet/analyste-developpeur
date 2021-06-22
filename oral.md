@@ -96,7 +96,7 @@
 - système RAID : répartition de données sur plusieurs disques pour assurer une haute disponibilité
 - PRA / PCA :
 	- plan de continuité d'activité : vise à assurer la haute disponibilité, architecture redondante, plutôt pour les applications critiques
-	- plan reprise d'activité : solution moins coûteuse, ensemle des procédures pour redémarrer le SI
+	- plan reprise d'activité : solution moins coûteuse, ensemble des procédures pour redémarrer le SI
 - protocole d'échange de fichiers : EDI ET EFI
 	- EDI : échange de données informatiques qui s'appuie sur des normes
 	- EFI : échange de formulaires informatisés, c'est le mode d'échange du site des impôts qui permet de faire des déclarations et télépayer ses impôts
@@ -119,16 +119,30 @@
 - assistance utilisateur : fonctionne en niveau : niveau 1 va répondre, sinon transmet au niveau 2... utilisation d'un logiciel comme Siamoi à l'Insee
 - TMA : tierce maintenance applicative : marché public
 - marché public :
+	- contrat avec acheteur public et opérateur économique public/privé, à tire onéreux
 	- liberté d'accès, égalité des traitements, transparence des procédures, CCTP
 	- notion de seuils pour publicité obligatoire, et pour la procédure
+		- si < 40000€, choisir une offre pertinente
 		- marché à procédure adaptée (pas de délais)
-		- appel d'offre
+		- appel d'offre si > 139000€
 	- accords cadre
 - virtualisation : partage de ressources physiques
+- qualité : fonctionnel, facilité d'utilisation, performance, fiabilité, sécurité, maintenabilité, portabilité
+
+## La sécurité
+
 - sécurité du SI : ensemble des mesures techniques et non techniques de protection permettant à un SI de résister à des événements susceptible de compromettre la disponibilité, l'intégrité ou la confidentialité des données et services
 - HFDS : haut fonctionnaire de la défense et de la sécurité désigné par le ministre. le HFDS désigne le FSSI (fonctionnaire de sécurité du système d'information)
+- Politique de sécurité du système d'information (PSSI)
+- méthode Expression des Besoins et Identification des Objectifs de Sécurité (EBIOS) outil de gestion des risques (criticité = probabilité * gravité)
+- PRA/PCA
 - ANSSI (agence nationale de la sécurité des systèmes d'information) : service du premier ministre, apporte son expertise aux administration et entreprises sur les les opérations d'importance vitale (OIV)
 - critères DICP : Disponibilité (accès permanent), Intégrité (données non altérées), Confidentialité (droits/permissions), Preuve (traçabilité)
+- sécurité :
+	- physique : climatisation, protection incendie, énergie, contrôle d'accès. disponibilité : stockage RAID, redondance matérielle
+	- réseau : DMZ, Proxy, Reverse-procy, Pare-feu
+	- applicative : sauvegarde de prod et d'archivage, supervision informatique, authentification et contrôle d'accès
+- former son personnel aux risques de sécurité, comme avoir un mot de passe robuste, ne pas cliquer sur des liens dans des mails douteux...
 
 ## A réviser
 
