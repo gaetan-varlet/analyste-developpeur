@@ -113,7 +113,7 @@
 		- dossier d'exploitation (DEX) / contrat d'application
 		- note d'architecture
 		- EP / Etude détaillée
-		- Plan d'assurance qualité : présente les dispositions prises par la MOA et MOE pour organiser et planifier le projet et assurer la qualité
+		- Plan d'assurance qualité : document de gestion de projet présente les dispositions prises par la MOA et MOE pour organiser et planifier le projet et assurer la qualité
 		- code source
 - maintenances : adaptative / corrective / évolutive
 - assistance utilisateur : fonctionne en niveau : niveau 1 va répondre, sinon transmet au niveau 2... utilisation d'un logiciel comme Siamoi à l'Insee
