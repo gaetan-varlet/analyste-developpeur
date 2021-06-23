@@ -22,6 +22,12 @@
 - langages compilés / interprétés / machine. langage procédurale / objet / balise
 - les 3 principes de la programmation objet : encapsulation (objet possède propriétés et méthodes) / héritage / polymorphisme
 - les AGL (ateliers de génie logiciel) est un logiciel aidant à la réalisation de logiciels : les environnements de conception (Tramis, éditeur de de diagrammes), les environnements de développement (Eclipse, IntelliJ)
+- les PGI ou ERP (progiciel de gestion intégré)
+	- application unique pour répondre à une partie des activités métiers
+	- expertise de l'éditeur / baisse du nombre d'applis à gérer
+	- coût connu et maîtrisé
+	- participe à l'urbanisation du SI
+	- dépendance vis à vis de l'éditeur
 - les différents types de bases de données : une BDD est une collection de données stockées de manière ordonnée. propriétés ACID (atomicité, cohérence, isolation, durabilité) garantissent que les transactions sont exécutées entièrement ou pas du tout
 	- base de données hiérarchique : premières BDD, organisé sous forme d'arbre, basé sur la relation parent-enfant (un seul parent par enfant)
 	- base de données réseau : permettent les relations n-n (plusieurs parents / plusieurs enfants)
@@ -90,6 +96,7 @@
 	- les tests unitaires / de composants (JUnit)
 	- les tests de BDD (DBUnit)
 	- les tests fonctionnels (Sélénium)
+	- les tests de sécurité
 	- les tests de charge (JMeter)
 - norme vs standard : norme est un référentiel publié par un organisme de normalisation, alors qu'un standard est un ensemble de recommandations préconisées par des utilisateurs avisés
 - LAN vs WAN : Local Area Network (réseau local) vs "Wide" (connecter des réseaux distants)
@@ -105,8 +112,11 @@
 	- EFI : échange de formulaires informatisés, c'est le mode d'échange du site des impôts qui permet de faire des déclarations et télépayer ses impôts
 - infocentre / SI décisionnel / datawarehouse / datamining => tableau de bord pour les décideurs, peuvent etre compilé via des cubles OLAP, ou des bases Big Data
 - e-administration : utilisation des TIC par les administrations françaises pour rendre les services publics plus accessibles et améliorer le fonctionnement interne
-- schéma directeur : définit l'horizon, la marche à suivre du SI
+- schéma directeur : définit l'horizon, la marche à suivre du SI / CCT guide opérationnel plus micro
 - prime TAI : prime Taitement Automatisé de l'Information
+- accompagnement au changement : plan de formation / plan de communication
+	- adhésion des utilisateurs
+	- documentation
 - documentation :
 	- intérêts : passer le relai à une autre équipe, accompagner l'utilisateur, piloter, informer, tracer les décisions, contractualiser...
 	- outils : répertoire partagé, wiki, forge (gestion de versions, droits d'accès) / documents types
@@ -124,9 +134,24 @@
 	- comité avant projet : comité de demande nouvelle, comité des marchés publics
 	- au cours du projet : stratégique (comité de pilotage), opérationnel (comité de suivi), comité utilisateur
 	- préparation des comités avec ordre du jour etc...
+- les utilisateurs :
+	- risques non association : non conforme au besoin, mauvaise utilisation, vocabulaire non adapté..., pete de motivation, rejet de l'application
+	- représentants des utilisateurs / comité utilisateurs / rallye test game / interviews / maquettes d'écrans, POC / impliquer les utilisateurs dans le projet
 - maintenances : adaptative / corrective / évolutive
+- gestion des versions :
+	- changer le nom du fichier / système locaux (RCS) / systèmes centralisés (SVN) / système distribués (Git)
+	- version en 3 chiffres
+	- partage / historique / savoir qui a fait quoi quand / travail collaboratif / travail en branche / lecture différentiel
+- maquette vs prototype : représentation d'un écran VS version incomplète
+	- montrer une ébauche, outil d'échange, complément aux spécs, utile pour estimer
+	- validation des utilisateurs
+	- POC : vérifier la faisabilité technique
+	- à réaliser lors des spécs, appel à un ergonome
+	- papier crayon / bureautique / programmation pour les POC
 - assistance utilisateur : fonctionne en niveau : niveau 1 va répondre, sinon transmet au niveau 2... utilisation d'un logiciel comme Siamoi à l'Insee
 - TMA : tierce maintenance applicative : marché public
+	- avantages : marquer la fin du projet en passant le relais / optimiser la gestion du personnel en interne / expertise presta
+	- risques : perte de maîtrise fonctionnelle et technique / moins de souplesse dans la gestion des priorités
 - marché public :
 	- contrat avec acheteur public et opérateur économique public/privé, à tire onéreux
 	- liberté d'accès, égalité des traitements, transparence des procédures, CCTP
@@ -142,6 +167,12 @@
 	- partage et mutualisation de l'information
 	- respect des normes et standards (RGI)
 - qualité : fonctionnel, facilité d'utilisation, performance, fiabilité, sécurité, maintenabilité, portabilité
+- logiciels libres :
+	- liberté d'utilisation / étudier le code / le modifier / le redistribuer
+	- importante de la communauté
+	- enjeux pour l'administration
+	- coût formation / accompagnement au changement
+	- attention interopérabilité
 
 ## La sécurité
 
